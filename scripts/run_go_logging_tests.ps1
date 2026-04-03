@@ -1,3 +1,7 @@
+param(
+    [switch]$SkipInstall
+)
+
 $ErrorActionPreference = "Stop"
 
 Write-Host "==> Running Go Logging unit tests"
