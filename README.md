@@ -6,6 +6,12 @@
 
 См. `benchmarks/README.md`.
 
+## API Docs
+
+Пример с документацией API (Swagger для FastAPI и OpenAPI endpoint для Gin) находится в папке `api_docs/`.
+
+См. `api_docs/README.md`.
+
 ## Repository checks
 
 Добавлены автоматические проверки в CI (`.github/workflows/repo-check.yml`) и локальный скрипт:
