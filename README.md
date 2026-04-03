@@ -12,6 +12,12 @@
 
 См. `api_docs/README.md`.
 
+## Go Logging Middleware
+
+Пример с middleware для логирования запросов в Go (Gin) находится в папке `go_logging/`.
+
+См. `go_logging/README.md`.
+
 ## Repository checks
 
 Добавлены автоматические проверки в CI (`.github/workflows/repo-check.yml`) и локальный скрипт:
