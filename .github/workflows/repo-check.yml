@@ -41,9 +41,11 @@ jobs:
         if: ${{ hashFiles('**/Cargo.toml') != '' }}
         run: cargo test --all --all-features
 
-      - name: Install pytest
+      - name: Install Python test dependencies
         if: ${{ hashFiles('**/pyproject.toml') != '' || hashFiles('**/pytest.ini') != '' || hashFiles('**/test_*.py') != '' || hashFiles('**/*_test.py') != '' }}
-        run: python -m pip install --upgrade pip pytest httpx
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest httpx fastapi uvicorn
 
       - name: Pytest
         if: ${{ hashFiles('**/pyproject.toml') != '' || hashFiles('**/pytest.ini') != '' || hashFiles('**/test_*.py') != '' || hashFiles('**/*_test.py') != '' }}
