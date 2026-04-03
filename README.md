@@ -32,3 +32,10 @@
 - `pyproject.toml` для maturin-проектов;
 - заполненность `PROMPT_LOG.md`.
 
+## Unit-test checks
+
+Добавлены локальные скрипты для проверки работоспособности (`.scripts\...`), которые можно проверить с помощью команды в терминале (`powershell -ExecutionPolicy Bypass -File .\scripts\...`):
+
+- `.\scripts\run_benchmarks_tests.ps1`
+- `.\scripts\run_api_docs_tests.ps1`
+- `.\scripts\run_go_logging_tests.ps1`
